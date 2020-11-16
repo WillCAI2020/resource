@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC&family=Source+Code+Pro&display=swap');
+body{
+	font-family: "Noto Serif SC", sans-serif, serif;
+	background-image: url(body-bg.png);
+	margin-top: 0px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 10px;
+	border-color: #FFE4B5;
+	border-width: 1px;
+	border-style: dashed;
+}
+h1,h2{
+	color: #cc6600;
+	text-align: center;
+}
+#box{
+	width:900px;
+	margin: 0 auto;
+	font-size: 0;
+}
+#note{
+	line-height: 1.6em;
+	font-style: italic;
+	font-family: "Ma Shan Zheng", sans-serif;
+	color: #444444;
+}
+#code{
+	font-family: "Source Code Pro";
+	font-weight: bold;
+	font-size: 12px;
+	font-style: italic;
+	text-align: left;
+	background-color: #FAF0E6;
+	padding: 10px;
+	border-radius: 5px;
+}
+/*导航栏*/
+
+.header {
+	width: 100%;
+	height: 60px;
+	background: #11333333;
+	text-align: center;	
+}
+
+/*一级菜单*/
+
+.header_ul {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.header_ul li {
+	margin-top: 6px;
+	margin-left: 21px;
+	float: left;
+}
+.header_ul li a{
+	text-decoration:none;
+}
+
+/*二级菜单*/
+
+.header_ul_ul {
+	width: 66px;
+	text-align: center;
+	position: absolute;
+	list-style: none;
+	background: #FAF0E6;
+}
+
+.header_ul_ul li {
+	margin: 10px 10px 10px -25px;
+	float: none;
+}
+.header_ul_three .header_ul_ul {
+	display: none;
+}
+.header_ul_three:hover .header_ul_ul {
+	display: block;
+}
+.btn{
+     width: 40px;
+     height: 40px;
+     position: fixed;
+     bottom: 30px;
+     background-color: #aaa;
+     border:1px solid #333;
+     border-radius: 50%; 
+     left: 50%;
+     margin-left:500px;
+ 
+ }
+.btn:after{
+     content: "";
+     width:16px;
+     height:16px;
+     border-left:2px solid #333;
+     border-bottom: 2px solid #333;
+     position: absolute;
+     left: 12px;
+     top: 15px;
+     transform :rotate(135deg);
+ 
+}
+.btn:hover{
+    background-color: #fff;
+}
